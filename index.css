@@ -211,6 +211,10 @@ a.call-to-action:hover{
     position: relative;
 }
 
+.food-card.fries{
+    padding-top: 4.8em;
+}
+
 .food-card.emphasis{
     background: linear-gradient(180deg, #ffffff22, var(--orangy));
     color: #fff;
@@ -222,6 +226,11 @@ a.call-to-action:hover{
     top: -35%;
     left: 50%;
     transform: translate(-60%, 0);
+}
+
+.food-card.fries img.food-image{
+    width: 75%;
+    transform: translate(-50%, 0);
 }
 
 .actual-food-card{
@@ -283,4 +292,9 @@ a.call-to-action:hover{
 }
 .food-card.emphasis .food-price .add:hover{
     background-color: var(--pale-blue);
+}
+
+.food-col:nth-child(2){
+    position: relative;
+    top: 2.5em;
 }
