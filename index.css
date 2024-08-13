@@ -4,11 +4,23 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: Abril;
+    src: url("fonts/AbrilFatface-Regular.ttf");
+}
+@font-face {
+    font-family: sourceSans;
+    src: url("fonts/SourceSans3-Medium.ttf");
+}
+
 body.full-page{
     width: 100vw;
     height: 100vh;
     max-width: 100vw;
     max-height: 100vh;
+    --pale-blue: #2d507dff;
+    --orangy: #ffc67eff;
+    --undebar-thickness: 5px;
 }
 .full-page{
     width: 100%;
@@ -17,4 +29,107 @@ body.full-page{
 .main-container{
     background-image: url("source_ims/BG.jpg");
     background-size: 100%;
+    position: relative;
 }
+
+.main-card{
+    /* background: #fff; */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: absolute;
+    top: 3em;
+    left: 3.5em;
+    bottom: 3em;
+    right: 3.5em;
+}
+
+.roundness-main{
+    border-radius: 3em;
+    border: 2px solid #ffffff44;
+    box-shadow: 0 8px 32px 0 #00000077;
+}
+
+.main-card-inner{
+    padding: 3em 4em;
+}
+
+.header-of-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: sourceSans;
+}
+
+.header-of-header .logo img{
+    width: 270px;
+}
+
+.header-of-header .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5em;
+    font-size: 23px;
+}
+
+.menu>*{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.main-menu-item{
+    position: relative;
+}
+
+.main-menu-item::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: var(--undebar-thickness);
+    background-color: var(--orangy);
+    bottom: calc(var(--undebar-thickness) * -1);
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: .2s ease;
+}
+
+.main-menu-item:hover::after{
+    width: 100%;
+}
+
+.main-menu a{
+    color: var(--pale-blue);
+    font-weight: 600;
+}
+
+a.call-to-action{
+    background-color: var(--orangy);
+    color: #fff;
+    padding: 1em 2em;
+    border-radius: 50px;
+}
+
+a.call-to-action:hover{
+    animation: pulse .3s ease;
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
