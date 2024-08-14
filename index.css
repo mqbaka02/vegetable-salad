@@ -363,3 +363,47 @@ a.call-to-action:hover{
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-height: 940px) {
+    .main-card-inner{
+        padding: 1em 6em;
+    }
+}
+
+@media only screen and (max-height: 890px) {
+    .main-container.full-page{
+        height: 910px;
+        min-height: 910px;
+        max-height: 910px;
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    /* body.full-page{
+        --orangy: red;
+    } */
+    .main-card-inner {
+        padding: 1em 2em;
+    }
+    .roundness-main{
+        border-radius: 1.5em;
+    }
+    .title h1.tag-line{
+        font-size: 3em;
+    }
+    .header-of-header .menu{
+        gap: 2em;
+        font-size: 17px;
+    }
+    .actions{
+        font-size: 17px;
+    }
+    .header-of-header .logo img{
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 950px){
+
+}
