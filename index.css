@@ -69,6 +69,7 @@ body.full-page{
     border-radius: 3em;
     border: 2px solid #ffffff44;
     box-shadow: 0 8px 32px 0 #00000077;
+    display: grid;
 }
 
 .main-card-content{
@@ -311,9 +312,13 @@ a.call-to-action:hover{
 }
 
 .hero-images{
+    flex: 1;
+}
+
+.hero-images-inner{
     position: relative;
 }
-.hero-images img{
+.hero-images-inner img{
     position: absolute;
 }
 .hero-images img.hero{
@@ -401,6 +406,10 @@ a.call-to-action:hover{
     }
     .header-of-header .logo img{
         width: 200px;
+    }
+    .right{
+        height: max-content;
+        margin: auto;
     }
 }
 
