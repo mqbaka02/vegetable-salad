@@ -20,10 +20,15 @@ body.full-page{
     max-height: 100vh;
     --pale-blue: #2d507dff;
     --orangy: #ffc67eff;
+    --orangy: #fba441;
+    /* --pale-blue: rgb(16, 45, 84);
+    --orangy: rgb(255, 156, 35); */
     --undebar-thickness: 5px;
     --separator-thickness: 3px;
     --faint-grey: #777777bb;
     --faint-white: #ffffff99;
+    overflow: hidden;
+    font-family: sourceSans;
 }
 .full-page{
     width: 100%;
@@ -75,7 +80,7 @@ body.full-page{
 }
 
 .main-card-inner{
-    padding: 3em 4em;
+    padding: 3em 6em;
     display: flex;
     flex-direction: column;
     gap: 3em;
@@ -86,7 +91,6 @@ body.full-page{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-family: sourceSans;
 }
 
 .header-of-header .logo img{
@@ -142,7 +146,7 @@ body.full-page{
 a.call-to-action{
     background-color: var(--orangy);
     color: #fff;
-    padding: 1em 2em;
+    padding: .7em 1.6em;
     border-radius: 50px;
 }
 
@@ -183,7 +187,6 @@ a.call-to-action:hover{
 }
 
 .title .tag-tag{
-    font-family: sourceSans;
     font-size: 1.3em;
     margin-top: .3em;
 }
@@ -209,7 +212,6 @@ a.call-to-action:hover{
     background: linear-gradient(180deg, #ffffff22, #fff);
     width: 170px;
     border-radius: 20px;
-    font-family: sourceSans;
     padding-bottom: 1em;
     padding-top: 3.8em;
     position: relative;
@@ -319,4 +321,45 @@ a.call-to-action:hover{
     width: 500px;
     max-width: 77%;
     top: -35px;
+}
+#anana{
+    left: 30px;
+    top: 310px;
+    width: 65px;
+    filter: blur(1px);
+}
+#ananas{
+    left: 470px;
+    top: 260px;
+    width: 110px;
+    transform: rotate(25deg);
+    /* filter: blur(1px); */
+}
+#kotomila{
+    left: 300px;
+    top: 450px;
+    width: 70px;
+    transform: rotate(264deg);
+    filter: blur(0.5px)
+}
+
+.actions{
+    display: flex;
+    flex-direction: row;
+    font-size: 23px;
+    gap: 2em;
+}
+.actions .action{
+    text-decoration: none;
+    padding: .7em 2em;
+}
+.actions .action:nth-child(1){
+    background-color: transparent;
+    color: var(--pale-blue);
+    border: 3px solid var(--pale-blue);
+}
+.actions .action:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
