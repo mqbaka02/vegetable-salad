@@ -323,24 +323,24 @@ a.call-to-action:hover{
     top: -35px;
 }
 #anana{
-    left: 30px;
-    top: 310px;
-    width: 65px;
+    left: 4.7%;
+    top: 57.3%;
+    width: 10.38%;
     filter: blur(1px);
 }
 #ananas{
-    left: 470px;
-    top: 260px;
-    width: 110px;
+    left: 75%;
+    top: 48%;
+    width: 17.6%;
     transform: rotate(25deg);
     /* filter: blur(1px); */
 }
 #kotomila{
-    left: 300px;
-    top: 450px;
-    width: 70px;
+    left: 47.92%;
+    top: 83.18%;
+    width: 11.18%;
     transform: rotate(264deg);
-    filter: blur(0.5px)
+    filter: blur(0.5px);
 }
 
 .actions{
