@@ -45,12 +45,10 @@ body.full-page{
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     position: absolute;
-    top: 2em;
+    min-height: 884px;
     left: 50%;
-    bottom: 2em;
-    /* right: 3.5em; */
-    /* overflow: hidden; */
-    transform: translate(-50%, 0);
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     max-width: 1500px;
 }
@@ -61,9 +59,9 @@ body.full-page{
     height: 100%;
     left: 0;
     top: 0;
-    /* content: ""; */
+    content: "";
     z-index: 0;
-    background: linear-gradient(152deg, #ffffff78, #ffffff00);
+    background: linear-gradient(152deg, #ffffff8a, #ffffff00);
     border-radius: inherit;
 }
 
@@ -159,7 +157,7 @@ a.call-to-action:hover{
         transform: scale(1);
     }
     50%{
-        transform: scale(1.05);
+        transform: scale(1.02);
     }
     100%{
         transform: scale(1);
@@ -295,6 +293,7 @@ a.call-to-action:hover{
 
 .food-price .add:hover{
     background-color: var(--orangy);
+    animation: pulse .3s ease;
 }
 .food-card.emphasis .food-price .add:hover{
     background-color: var(--pale-blue);
@@ -308,6 +307,7 @@ a.call-to-action:hover{
 .right{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .hero-images{
