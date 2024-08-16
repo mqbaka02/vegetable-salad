@@ -21,8 +21,6 @@ body.full-page{
     --pale-blue: #2d507dff;
     --orangy: #ffc67eff;
     --orangy: #fba441;
-    /* --pale-blue: rgb(16, 45, 84);
-    --orangy: rgb(255, 156, 35); */
     --undebar-thickness: 5px;
     --separator-thickness: 3px;
     --faint-grey: #777777bb;
@@ -37,6 +35,7 @@ body.full-page{
 .main-container{
     background-image: url("source_ims/BG.jpg");
     background-size: 100%;
+    background-repeat: repeat;
     position: relative;
 }
 
@@ -295,6 +294,11 @@ a.call-to-action:hover{
     color: var(--orangy);
 }
 
+#noodles img{
+    transform: translate(-68px, 0px);
+    top: -40%;
+}
+
 .food-price .add:hover{
     background-color: var(--orangy);
     animation: pulse .3s ease;
@@ -375,6 +379,10 @@ a.call-to-action:hover{
 @media only screen and (max-height: 940px) {
     .main-card-inner{
         padding: 1em 6em;
+    }
+    body.full-page{
+        height: 100vh;
+        overflow-y: scroll;
     }
 }
 
@@ -516,5 +524,24 @@ a.call-to-action:hover{
     }
     .header-of-header:not([nomenu]) .cross-el:last-child{
         opacity: 0;
+    }
+    body.full-page{
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    .main-card.roundness-main{
+        width: 100%;
+        min-width: unset;
+    }
+    .title h1.tag-line {
+        font-size: 2em;
+    }
+    .title .tag-tag {
+        font-size: 1em;
+    }
+    .main-card-inner {
+        padding: 1em .5em;
     }
 }
