@@ -112,6 +112,9 @@ body.full-page{
     justify-content: center;
     align-items: center;
 }
+.cross{
+    display: none;
+}
 
 .menu a{
     text-decoration: none;
@@ -414,5 +417,104 @@ a.call-to-action:hover{
 }
 
 @media only screen and (max-width: 950px){
-
+    .food-cards{
+        gap: .7em;
+    }
+}
+@media only screen and (max-width: 810px){
+    .main-card.roundness-main{
+        width: 80%;
+        min-width: 440px;
+    }
+    .content-of-header{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-images-inner{
+        display: none;
+    }
+    .title{
+        text-align: center;
+    }
+    .food-cards{
+        justify-content: center;
+    }
+    .food-col:nth-child(2){
+        top: 0;
+    }
+    .left{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .left .title{
+        flex-grow: 0;
+    }
+    /*Menu*/
+    .header-of-header{
+        position: relative;
+    }
+    .header-of-header .menu{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: var(--faint-white);
+        padding: 1em 2em 2em 4em;
+    }
+    .header-of-header .menu .main-menu{
+        flex-direction: column;
+    }
+    .header-of-header[nomenu] .menu{
+        transition: .3s;
+        padding: 0;
+    }
+    .header-of-header[nomenu] .menu .main-menu{
+        display: none;
+    }
+    .header-of-header[nomenu] .menu .btn-container{
+        display: none;
+    }
+    .cross{
+        display: block;
+        position: absolute;
+        /* left: 10px; */
+        /* right: 100%; */
+        right: calc(100% - 35px - 10px);
+        top: 10px;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        overflow: hidden;
+        transition: .3s;
+    }
+    .header-of-header[nomenu] .cross{
+        right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    .header-of-header[nomenu] .cross-el{
+        transition: .3s;
+        height: 6px;
+        opacity: 1;
+    }
+    .cross-el{
+        height: 4px;
+        width: 100%;
+        background-color: var(--pale-blue);
+    }
+    .header-of-header:not([nomenu]) .cross-el{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%) rotate(45deg);
+    }
+    .header-of-header:not([nomenu]) .cross-el+.cross-el{
+        transform: translate(0, -50%) rotate(-45deg);
+    }
+    .header-of-header:not([nomenu]) .cross-el:last-child{
+        opacity: 0;
+    }
 }
