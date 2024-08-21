@@ -40,7 +40,6 @@ body.full-page{
 }
 
 .main-card{
-    /* background: #fff; */
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     position: absolute;
@@ -345,7 +344,6 @@ a.call-to-action:hover{
     top: 48%;
     width: 17.6%;
     transform: rotate(25deg);
-    /* filter: blur(1px); */
 }
 #kotomila{
     left: 47.92%;
@@ -396,9 +394,6 @@ a.call-to-action:hover{
 }
 
 @media only screen and (max-width: 1200px) {
-    /* body.full-page{
-        --orangy: red;
-    } */
     .main-card-inner {
         padding: 1em 2em;
     }
@@ -486,8 +481,6 @@ a.call-to-action:hover{
     .cross{
         display: block;
         position: absolute;
-        /* left: 10px; */
-        /* right: 100%; */
         right: calc(100% - 35px - 10px);
         top: 10px;
         width: 35px;
