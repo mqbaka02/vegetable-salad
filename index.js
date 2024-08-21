@@ -59,6 +59,7 @@ const trackmouse= (event) => {
         x: ((mouse_pos.x - win_size.x) - win_size/2) / win_size.width,
         y: ((mouse_pos.y - win_size.y) - win_size/2) / win_size.height
     };
+    
 	// console.log(win_size);
 	// console.log(mouse_rel_pos);
     // secondray_ims.forEach((im, key)=> {
